@@ -9,14 +9,13 @@ const SkillsSection = () => {
       color: "bg-secondary/10",
       iconColor: "text-secondary",
       skills: [
-        { name: "Python", level: 90 },
-        { name: "HTML", level: 90 },
-        { name: "CSS", level: 85 },
-        { name: "JavaScript", level: 90 },
-        { name: "Node.js", level: 85 },
-        { name: "React.js", level: 90 },
-        { name: "C++", level: 85 },
-        { name: "Java", level: 85 },
+        { name: "Python" },
+        { name: "HTML" },
+        { name: "CSS" },
+        { name: "JavaScript" },
+        { name: "Node.js" },
+        { name: "React.js" },
+        { name: "Java" },
       ],
     },
     {
@@ -25,9 +24,10 @@ const SkillsSection = () => {
       color: "bg-accent/10",
       iconColor: "text-accent",
       skills: [
-        { name: "Scikit-learn", level: 85 },
-        { name: "Data Analysis", level: 80 },
-        { name: "Model Training", level: 85 },
+        { name: "Scikit-learn" },
+        { name: "PyTorch" },
+        { name: "Data Analysis" },
+        { name: "Model Training" },
       ],
     },
     {
@@ -47,9 +47,9 @@ const SkillsSection = () => {
       color: "bg-teal/10",
       iconColor: "text-teal",
       skills: [
-        { name: "Firebase", level: 90 },
-        { name: "Supabase", level: 85 },
-        { name: "Git & GitHub", level: 90 },
+        { name: "Firebase" },
+        { name: "Supabase" },
+        { name: "Git & GitHub" },
       ],
     },
     {
@@ -58,10 +58,10 @@ const SkillsSection = () => {
       color: "bg-primary/10",
       iconColor: "text-primary",
       skills: [
-        { name: "Problem Solving", level: 95 },
-        { name: "Analytical Thinking", level: 90 },
-        { name: "Time Management", level: 90 },
-        { name: "Communication", level: 85 },
+        { name: "Problem Solving" },
+        { name: "Analytical Thinking" },
+        { name: "Time Management" },
+        { name: "Communication" },
       ],
     },
   ];
@@ -105,15 +105,6 @@ const SkillsSection = () => {
                       <span className="font-medium text-foreground">
                         {skill.name}
                       </span>
-                      <span className="text-muted-foreground text-sm">
-                        {skill.level}%
-                      </span>
-                    </div>
-                    <div className="h-2 bg-muted rounded-full overflow-hidden">
-                      <div
-                        className="h-full bg-gradient-to-r from-secondary to-teal rounded-full transition-all duration-1000"
-                        style={{ width: `${skill.level}%` }}
-                      ></div>
                     </div>
                   </div>
                 ))}
